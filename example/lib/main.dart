@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:screen/screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -31,14 +33,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Screen plugin example')),
+        appBar: AppBar(title: const Text('Screen plugin example')),
         body: Center(
           child: Column(
             children: <Widget>[
               Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Screen is kept on ? "),
+                    const Text("Screen is kept on ? "),
                     Checkbox(
                         value: _isKeptOn,
                         onChanged: (bool? b) {
@@ -48,7 +50,7 @@ class _MyAppState extends State<MyApp> {
                           });
                         })
                   ]),
-              Text("Brightness :"),
+              const Text("Brightness :"),
               Slider(
                 value: _brightness,
                 onChanged: (double b) {

@@ -86,6 +86,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "screen",
+      "rootUri": "../../",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///D:/Compilers/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -140,13 +146,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "screen",
+      "name": "screen_example",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-01-22T06:22:12.616102Z",
+  "generated": "2022-01-22T06:22:38.657430Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }
